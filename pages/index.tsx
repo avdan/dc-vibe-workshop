@@ -495,7 +495,7 @@ export default function Home() {
             style={{ display: "grid", gap: "0.75rem", marginTop: "1.25rem" }}
           >
             <label htmlFor="email">
-              Email
+              {`Email `}
               <input
                 id="email"
                 type="email"
@@ -503,7 +503,7 @@ export default function Home() {
                 value={email}
                 onChange={(event) => setEmail(event.target.value)}
                 required
-                style={{ marginTop: "0.35rem" }}
+                style={{ marginTop: "0.35rem" , marginLeft: "1rem"}}
               />
             </label>
             <button type="submit" disabled={isAuthLoading}>
